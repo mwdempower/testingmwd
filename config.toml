@@ -1,0 +1,62 @@
+baseURL = 'http://54.89.104.229:1313'
+languageCode = 'en-us'
+title = 'Empowering Muslim Women'
+theme = 'blist-hugo-theme'
+googleAnalytics = 'G-DKW9G4KQ1P'
+[languages]
+  [languages.en]
+    contentDir = "content" #English
+    weight = 1
+    languageName = "English"
+    [languages.en.params]
+      introTitle = "Empower Muslim Women"
+      introSubtitle = "A Resource for Muslim Women Seeking Divorce in Canada"
+      introPhoto = "/EMW.png"
+      logo = "/EMW.png"
+    [[languages.en.menu.main]]
+        name = "Blog"
+        url = "blog"
+        weight = 1
+
+    [[languages.en.menu.main]]
+        name = "About"
+        url = "pages/about/"
+        weight = 2
+
+    [[languages.en.menu.main]]
+        name = "Contact Us"
+        url = "pages/contact/"
+        weight = 3
+
+    [[languages.en.menu.main]]
+        name = "FAQ"
+        url = "/pages/faq/"
+        weight = 4
+[params]
+  # Enable the darkmode toggle in header
+  darkModeToggle = true
+  
+  # Enable search in header
+  enableSearch = true
+
+  # Option to customize the search parameters of a page
+  # Below are the supported options; Note that including entire content
+  # may slowdown the loading of search results
+  # Title of page is included by default
+  searchKeys = [
+    "tags",
+    "date",
+    "categories",
+    "summary",
+    "content",
+    "link"
+  ]
+  #Hides the thumbnail in the post view
+  hidePageThumbnail = true
+  # The page bundle that is shown on the front page
+  frontBundle = "blog"
+[params.homepage.social]
+  # Global params common for both languages
+  title = "Want to talk?"
+  description = "Reach out to us using our Contact Us form - We will not seek any personal information"
+
